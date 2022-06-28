@@ -1,4 +1,25 @@
+/* ---------- MOBILE FIRST APROACH ---------- */
+
 /* ---------- Global ---------- */
+
+:root {
+  /* Text Colors */
+  --text-darkblue: hsl(223, 47%, 23%);
+  --text-desaturatedblue: hsl(224, 23%, 55%);
+
+  --text-palepurple: hsl(247, 68%, 64%);
+
+  /* Background Colors */
+  --bg-paleblue: hsl(225, 100%, 94%);
+  --bg-verypaleblue: hsl(225, 100%, 98%);
+  --bg-brightblue: hsl(245, 75%, 52%);
+
+  --bg-grayishblue: hsl(225, 100%, 96.5%);
+  --bg-palepurple: hsl(247, 68%, 64%);
+
+  /* Images */
+  --bg-cover: url(images/pattern-background-desktop.svg);
+}
 
 * {
   box-sizing: border-box;
@@ -32,11 +53,11 @@ li {
 /* ---------- Main Container ---------- */
 
 .main {
-  background-color: hsl(225, 100%, 94%);
+  background-color: var(--bg-paleblue);
 
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url(images/pattern-background-desktop.svg);
+  background-image: var(--bg-cover);
 
   display: flex;
   justify-content: center;
@@ -46,10 +67,11 @@ li {
 }
 
 .container {
-  background-color: hsl(225, 100%, 98%);
+  background-color: var(--bg-verypaleblue);
 
-  width: 23.75rem;
+  max-width: 23.75rem;
   height: auto;
+  margin: 0 2rem;
   border-radius: 1rem;
 
   display: flex;
@@ -63,9 +85,9 @@ li {
 /* ---------- Main Image---------- */
 
 #main-image {
+  width: 100%;
   border-top-right-radius: 1rem;
   border-top-left-radius: 1rem;
-  width: 23.75rem;
 }
 
 /* ---------- /Main Image---------- */
@@ -73,23 +95,24 @@ li {
 /* ---------- Main Text---------- */
 
 h1 {
+  color: var(--text-darkblue);
+
   margin-top: 1.875rem;
   font-weight: 900;
-
-  color: hsl(223, 47%, 23%);
 }
 
 .main-text p {
-  margin-top: 1rem;
+  color: var(--text-desaturatedblue);
+
   font-size: 0.9375rem;
   font-weight: 500;
   line-height: 1.25rem;
 
-  color: hsl(224, 23%, 55%);
+  margin-top: 1rem;
 }
 
 .main-text {
-  width: 17.5rem;
+  max-width: 80%;
 }
 
 /* ---------- /Main Text---------- */
@@ -97,21 +120,23 @@ h1 {
 /* ---------- Main Plan---------- */
 
 h2 {
+  color: var(--text-darkblue);
+
   font-weight: 900;
   font-size: 1rem;
-  color: hsl(223, 47%, 23%);
 }
 
 .plan-text p {
+  color: var(--text-desaturatedblue);
+
   font-size: 1rem;
   font-weight: 500;
-  color: hsl(224, 23%, 55%);
 }
 
 .plan-container {
-  background-color: hsl(225, 100%, 96.5%);
+  background-color: var(--bg-grayishblue);
 
-  width: 19rem;
+  width: 85%;
   padding: 1rem 1.25rem;
   border-radius: 0.625rem;
   margin-top: 1.625rem;
@@ -142,16 +167,15 @@ h2 {
 }
 
 #change {
-  border: none;
-  background: transparent;
+  color: var(--text-darkblue);
+
   font-weight: 900;
   font-size: 12px;
-  color: hsl(223, 47%, 23%);
   transition: all 0.3s ease;
 }
 
 #change:hover {
-  color: hsl(247, 68%, 64%);
+  color: var(--bg-palepurple);
   transition: all 0.3s ease;
 }
 
@@ -160,7 +184,7 @@ h2 {
 /* ---------- Main Button---------- */
 
 .main-button {
-  width: 19rem;
+  width: 100%;
   margin-bottom: 2rem;
 
   display: flex;
@@ -169,18 +193,20 @@ h2 {
   align-items: center;
 }
 
-.proceed-payment p {
+.process-payment p {
   font-weight: 900;
   font-size: 0.875rem;
-  color: hsl(225, 100%, 98%);
+  color: var(--bg-verypaleblue);
 }
 
-.proceed-payment {
-  width: 19rem;
+.process-payment {
+  background-color: var(--bg-brightblue);
+  box-shadow: 0 1rem 0.5rem var(--bg-paleblue);
+
+  width: 85%;
   height: 3rem;
   margin-top: 2rem;
   border-radius: 0.625rem;
-  background-color: hsl(245, 75%, 52%);
   transition: all 0.3s ease;
 
   display: flex;
@@ -188,29 +214,30 @@ h2 {
   align-items: center;
 }
 
-#proceed-payment {
+#process-payment {
   width: 19rem;
   height: 3rem;
   transition: all 0.3s ease;
 }
 
-#proceed-payment:hover {
+#process-payment:hover {
   cursor: pointer;
 }
-.proceed-payment:hover {
-  box-shadow: 0 0.5rem 0.1875rem hsl(225, 100%, 94%);
-  background-color: hsl(247, 68%, 64%);
+
+.process-payment:hover {
+  background-color: var(--bg-palepurple);
   transition: all 0.3s ease;
 }
 
 .cancel-order p {
+  color: var(--text-desaturatedblue);
+
   font-weight: 900;
   font-size: 0.875rem;
-  color: hsl(224, 23%, 55%);
 }
 
 .cancel-order {
-  width: 19rem;
+  width: 85%;
   height: 3rem;
   margin-top: 0.75rem;
 
@@ -221,8 +248,9 @@ h2 {
 }
 
 .cancel-order p:hover {
+  color: var(--text-darkblue);
+
   cursor: pointer;
-  color: hsl(223, 47%, 23%);
   transition: all 0.3s ease;
 }
 
