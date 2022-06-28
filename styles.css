@@ -181,9 +181,9 @@ h2 {
 
 /* ---------- /Main Plan---------- */
 
-/* ---------- Main Button---------- */
+/* ---------- Main Buttons---------- */
 
-.main-button {
+.main-buttons {
   width: 100%;
   margin-bottom: 2rem;
 
@@ -254,4 +254,4 @@ h2 {
   transition: all 0.3s ease;
 }
 
-/* ---------- /Main Button---------- */
+/* ---------- /Main Buttons---------- */
