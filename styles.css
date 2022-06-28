@@ -1,0 +1,229 @@
+/* ---------- Global ---------- */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ---------- /Global ---------- */
+
+/* ---------- Main Container ---------- */
+
+.main {
+  background-color: hsl(225, 100%, 94%);
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(images/pattern-background-desktop.svg);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: hsl(225, 100%, 98%);
+
+  width: 23.75rem;
+  height: auto;
+  border-radius: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ---------- /Main Container ---------- */
+
+/* ---------- Main Image---------- */
+
+#main-image {
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  width: 23.75rem;
+}
+
+/* ---------- /Main Image---------- */
+
+/* ---------- Main Text---------- */
+
+h1 {
+  margin-top: 1.875rem;
+  font-weight: 900;
+
+  color: hsl(223, 47%, 23%);
+}
+
+.main-text p {
+  margin-top: 1rem;
+  font-size: 0.9375rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+
+  color: hsl(224, 23%, 55%);
+}
+
+.main-text {
+  width: 17.5rem;
+}
+
+/* ---------- /Main Text---------- */
+
+/* ---------- Main Plan---------- */
+
+h2 {
+  font-weight: 900;
+  font-size: 1rem;
+  color: hsl(223, 47%, 23%);
+}
+
+.plan-text p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: hsl(224, 23%, 55%);
+}
+
+.plan-container {
+  background-color: hsl(225, 100%, 96.5%);
+
+  width: 19rem;
+  padding: 1rem 1.25rem;
+  border-radius: 0.625rem;
+  margin-top: 1.625rem;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.plan-image {
+  margin-right: 0.375rem;
+}
+
+.plan-text {
+  margin-left: 0.375rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.change {
+  margin-left: auto;
+}
+
+#plan-image {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+#change {
+  border: none;
+  background: transparent;
+  font-weight: 900;
+  font-size: 12px;
+  color: hsl(223, 47%, 23%);
+  transition: all 0.3s ease;
+}
+
+#change:hover {
+  color: hsl(247, 68%, 64%);
+  transition: all 0.3s ease;
+}
+
+/* ---------- /Main Plan---------- */
+
+/* ---------- Main Button---------- */
+
+.main-button {
+  width: 19rem;
+  margin-bottom: 2rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.proceed-payment p {
+  font-weight: 900;
+  font-size: 0.875rem;
+  color: hsl(225, 100%, 98%);
+}
+
+.proceed-payment {
+  width: 19rem;
+  height: 3rem;
+  margin-top: 2rem;
+  border-radius: 0.625rem;
+  background-color: hsl(245, 75%, 52%);
+  transition: all 0.3s ease;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#proceed-payment {
+  width: 19rem;
+  height: 3rem;
+  transition: all 0.3s ease;
+}
+
+#proceed-payment:hover {
+  cursor: pointer;
+}
+.proceed-payment:hover {
+  box-shadow: 0 0.5rem 0.1875rem hsl(225, 100%, 94%);
+  background-color: hsl(247, 68%, 64%);
+  transition: all 0.3s ease;
+}
+
+.cancel-order p {
+  font-weight: 900;
+  font-size: 0.875rem;
+  color: hsl(224, 23%, 55%);
+}
+
+.cancel-order {
+  width: 19rem;
+  height: 3rem;
+  margin-top: 0.75rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.cancel-order p:hover {
+  cursor: pointer;
+  color: hsl(223, 47%, 23%);
+  transition: all 0.3s ease;
+}
+
+/* ---------- /Main Button---------- */
